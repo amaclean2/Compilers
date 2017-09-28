@@ -1,0 +1,2 @@
+Scanner Output:
+BEGIN7, INTEGER3, A1, ;16, END8, .18, 

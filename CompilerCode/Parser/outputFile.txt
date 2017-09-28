@@ -1,0 +1,35 @@
+1:  BEGIN
+2:  comment Parser Test
+3:  integer n;
+4:  logical prime;
+5:  prime := true;
+6:  
+7:  comment n is the number to check;
+8:  n := 10;
+9:  integer i;
+10:  i := 0;
+11:  
+12:  while((i * i) < 10)
+13:  do i := i + 1;
+14:  
+15:  integer j;
+16:  integer k;
+17:  j := 0;
+18:  while (j < i and prime = true)
+19:  do
+20:  	BEGIN
+21:  	k := j;
+22:  	while(k < n or (k * j) != n)
+23:  	do k := k + 1;
+24:  	if((k * j) = n)
+25:  	then prime := false;
+26:  	if((k * j) != n)
+27:  	then j := j + 1;
+28:  	END;
+29:  
+30:  if prime = true
+31:  then write("prime");
+32:  if prime = false
+33:  then write("composite");
+34:  
+35:  END.

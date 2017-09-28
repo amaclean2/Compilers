@@ -1,0 +1,19 @@
+.text
+.globl main
+move $fp $sp
+la $a0 ProgStart
+li $v0 4
+syscall
+
+# stored a new variable in the next offset
+
+# new statement
+
+la $a0 ProgEnd
+li $v0 4
+syscall
+li $v0 10
+syscall
+.data
+ProgStart: .asciiz "Program Start\n"
+ProgEnd: .asciiz "Program End\n"
